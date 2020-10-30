@@ -19,16 +19,16 @@ module Mercury
     #
     def self.routes
       Rails.application.routes.draw do
-        match '/editor(/*requested_uri)' => "mercury#edit", :as => :mercury_editor
+        match '/editor(/*requested_uri)' => "mercury#edit", :as => :mercury_editor, via: [:get]
 
         namespace :mercury do
           resources :images
         end
 
         scope '/mercury' do
-          match ':type/:resource' => "mercury#resource"
-          match 'snippets/:name/options' => "mercury#snippet_options"
-          match 'snippets/:name/preview' => "mercury#snippet_preview"
+          match ':type/:resource' => "mercury#resource", via: [:get]
+          match 'snippets/:name/options' => "mercury#snippet_options", via: [:get, :post]
+          match 'snippets/:name/preview' => "mercury#snippet_preview", via: [:get, :post]
         end
 
         if defined?(Mercury::Application)
