@@ -144,7 +144,7 @@
   background-image: -moz-linear-gradient(center bottom, rgb(198,198,198) 0%, rgb(210,210,209) 100%);
 }
 .mercury-editable-toolbar:after {
-  content: '\00a0';
+  content: '\u00a0';
   display: block;
   visibility: hidden;
   clear: both;
@@ -266,7 +266,7 @@
   padding: 3px 7px 1px 7px;
 }
 .mercury-snippet-toolbar:after {
-  content: '\00a0';
+  content: '\u00a0';
   display: block;
   visibility: hidden;
   clear: both;

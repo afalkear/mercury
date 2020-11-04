@@ -49,7 +49,7 @@
   overflow: hidden;
 }
 .mercury-modal h1.mercury-modal-title:after {
-  content: '\00a0';
+  content: '\u00a0';
   display: block;
   visibility: hidden;
   clear: both;
@@ -90,7 +90,7 @@
 .mercury-modal .mercury-modal-content:after {
   display: block;
   clear: both;
-  content: '\00a0';
+  content: '\u00a0';
   visibility: hidden;
   overflow: hidden;
   height: 0;

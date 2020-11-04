@@ -592,7 +592,7 @@ form fieldset.buttons .commit input:hover {
   overflow: hidden;
 }
 .mercury-modal h1.mercury-modal-title:after {
-  content: '\00a0';
+  content: '\u00a0';
   display: block;
   visibility: hidden;
   clear: both;
@@ -633,7 +633,7 @@ form fieldset.buttons .commit input:hover {
 .mercury-modal .mercury-modal-content:after {
   display: block;
   clear: both;
-  content: '\00a0';
+  content: '\u00a0';
   visibility: hidden;
   overflow: hidden;
   height: 0;
@@ -904,7 +904,7 @@ form fieldset.buttons .commit input:hover {
   background-image: -moz-linear-gradient(center bottom, rgb(198,198,198) 0%, rgb(210,210,209) 100%);
 }
 .mercury-editable-toolbar:after {
-  content: '\00a0';
+  content: '\u00a0';
   display: block;
   visibility: hidden;
   clear: both;
@@ -1026,7 +1026,7 @@ form fieldset.buttons .commit input:hover {
   padding: 3px 7px 1px 7px;
 }
 .mercury-snippet-toolbar:after {
-  content: '\00a0';
+  content: '\u00a0';
   display: block;
   visibility: hidden;
   clear: both;

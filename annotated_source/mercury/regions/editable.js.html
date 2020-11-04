@@ -929,14 +929,14 @@ all other times it should store if there&rsquo;s a 1 second pause</p>
 
     <span class="k">if</span> <span class="nx">@range</span>
       <span class="k">if</span> <span class="nx">@commonAncestor</span><span class="p">(</span><span class="kc">true</span><span class="p">).</span><span class="nx">closest</span><span class="p">(</span><span class="s1">&#39;.mercury-snippet&#39;</span><span class="p">).</span><span class="nx">length</span>
-        <span class="nv">lastChild = </span><span class="nx">@context</span><span class="p">.</span><span class="nx">createTextNode</span><span class="p">(</span><span class="s1">&#39;\00&#39;</span><span class="p">)</span>
+        <span class="nv">lastChild = </span><span class="nx">@context</span><span class="p">.</span><span class="nx">createTextNode</span><span class="p">(</span><span class="s1">&#39;\u00&#39;</span><span class="p">)</span>
         <span class="nx">element</span><span class="p">.</span><span class="nx">appendChild</span><span class="p">(</span><span class="nx">lastChild</span><span class="p">)</span>
     <span class="k">else</span>
       <span class="k">if</span> <span class="nx">element</span><span class="p">.</span><span class="nx">lastChild</span> <span class="o">&amp;&amp;</span> <span class="nx">element</span><span class="p">.</span><span class="nx">lastChild</span><span class="p">.</span><span class="nx">nodeType</span> <span class="o">==</span> <span class="mi">3</span> <span class="o">&amp;&amp;</span> <span class="nx">element</span><span class="p">.</span><span class="nx">lastChild</span><span class="p">.</span><span class="nx">textContent</span><span class="p">.</span><span class="nx">replace</span><span class="p">(</span><span class="sr">/^[\s+|\n+]|[\s+|\n+]$/</span><span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="p">)</span> <span class="o">==</span> <span class="s1">&#39;&#39;</span>
         <span class="nv">lastChild = </span><span class="nx">element</span><span class="p">.</span><span class="nx">lastChild</span>
-        <span class="nv">element.lastChild.textContent = </span><span class="s1">&#39;\00&#39;</span>
+        <span class="nv">element.lastChild.textContent = </span><span class="s1">&#39;\u00&#39;</span>
       <span class="k">else</span>
-        <span class="nv">lastChild = </span><span class="nx">@context</span><span class="p">.</span><span class="nx">createTextNode</span><span class="p">(</span><span class="s1">&#39;\00&#39;</span><span class="p">)</span>
+        <span class="nv">lastChild = </span><span class="nx">@context</span><span class="p">.</span><span class="nx">createTextNode</span><span class="p">(</span><span class="s1">&#39;\u00&#39;</span><span class="p">)</span>
         <span class="nx">element</span><span class="p">.</span><span class="nx">appendChild</span><span class="p">(</span><span class="nx">lastChild</span><span class="p">)</span>
 
     <span class="k">if</span> <span class="nx">lastChild</span>

@@ -17262,15 +17262,15 @@ Showdown.converter = function() {
       range = this.context.createRange();
       if (this.range) {
         if (this.commonAncestor(true).closest('.mercury-snippet').length) {
-          lastChild = this.context.createTextNode('\00');
+          lastChild = this.context.createTextNode('\u00');
           element.appendChild(lastChild);
         }
       } else {
         if (element.lastChild && element.lastChild.nodeType === 3 && element.lastChild.textContent.replace(/^[\s+|\n+]|[\s+|\n+]$/, '') === '') {
           lastChild = element.lastChild;
-          element.lastChild.textContent = '\00';
+          element.lastChild.textContent = '\u00';
         } else {
-          lastChild = this.context.createTextNode('\00');
+          lastChild = this.context.createTextNode('\u00');
           element.appendChild(lastChild);
         }
       }
